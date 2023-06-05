@@ -32,7 +32,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 3002
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses: []
@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NoiseMap:
-        m_Texture: {fileID: 2800000, guid: 265d63fc2f1e9438db785b8fd5270433, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -93,32 +93,32 @@ Material:
     - _Depth: 100
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FadeDistance: 0
-    - _FoamAmount: 0.22
-    - _FoamDepth: 4.3
-    - _FoamDirection: -0.259
+    - _FadeDistance: -6.29
+    - _FoamAmount: 0
+    - _FoamDepth: 1
+    - _FoamDirection: 0.059
     - _FoamMode: 1
-    - _FoamNoiseAmount: 0.079
-    - _FoamScale: 0.15
-    - _FoamSharpness: 0.371
-    - _FoamSpeed: 0
-    - _FoamStretchX: 3.24
-    - _FoamStretchY: 4.8
+    - _FoamNoiseAmount: 0.459
+    - _FoamScale: 0
+    - _FoamSharpness: 0.5
+    - _FoamSpeed: 0.1
+    - _FoamStretchX: 1
+    - _FoamStretchY: 3.28
     - _Frequency: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _LightContribution: 0.248
+    - _LightContribution: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Opaque: 0
-    - _QueueOffset: 0
+    - _QueueOffset: 2
     - _ReceiveShadows: 1
-    - _RefractionAmplitude: 0.0143
-    - _RefractionFrequency: 34.97
-    - _RefractionScale: 1
-    - _RefractionSpeed: 0.1
-    - _ShadowStrength: 0.111
+    - _RefractionAmplitude: 0.0476
+    - _RefractionFrequency: 58.45
+    - _RefractionScale: 36.26
+    - _RefractionSpeed: 0.04
+    - _ShadowStrength: 0.35
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -127,23 +127,23 @@ Material:
     - _Surface: 0
     - _UvFadeX: 0.1
     - _UvFadeY: 0.1
-    - _WaterClearness: 0.261
-    - _WaterDepth: 1.04
-    - _WaveAmplitude: 0.44
-    - _WaveDirection: 0
-    - _WaveFrequency: 0.03
+    - _WaterClearness: 0.25
+    - _WaterDepth: 10
+    - _WaveAmplitude: 0.3
+    - _WaveDirection: -0.115
+    - _WaveFrequency: 1
     - _WaveMode: 1
-    - _WaveNoise: 0.181
-    - _WaveSpeed: 0.05
+    - _WaveNoise: 0.25
+    - _WaveSpeed: 0.19
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 1, b: 0.7287984, a: 1}
-    - _ColorDeep: {r: 0.4481132, g: 0.7661051, b: 1, a: 0.7647059}
-    - _ColorShallow: {r: 0.5529412, g: 0.76470596, b: 1, a: 0.34901962}
+    - _ColorDeep: {r: 0.1745283, g: 0.6114487, b: 1, a: 1}
+    - _ColorShallow: {r: 0.37264147, g: 1, b: 0.95661885, a: 0.6}
     - _CrestColor: {r: 1, g: 1, b: 1, a: 0.9}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 1, g: 0.9566474, b: 0.3843137, a: 0.27058825}
+    - _FoamColor: {r: 0.37254903, g: 1, b: 0.9568628, a: 0.8509804}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
