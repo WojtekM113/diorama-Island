@@ -20,6 +20,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right* horizontalInput *Time.deltaTime + transform.forward* verticalInput * Time.deltaTime;
 
-        characterController.Move(move *speed * Time.deltaTime * 60);
+        characterController.Move(move * speed * Time.deltaTime * 60);
     }
 }
