@@ -4,25 +4,11 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    CharacterController characterController;
-    // Start is called before the first frame update
-    void Start()
-    {
-        characterController = GetComponent<CharacterController>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.GetComponent<IInteract>() != null && Input.GetKeyDown(KeyCode.E))
+        if (other.GetComponent<IInteract>() != null)
         {
-                        
-                other.GetComponent<IInteract>().Interact();                    
+            other.GetComponent<IInteract>().Interact();
         }
     }
-
 }
