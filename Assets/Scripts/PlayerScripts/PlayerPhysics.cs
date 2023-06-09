@@ -9,49 +9,53 @@ public class PlayerPhysics : MonoBehaviour {
 
     private float jumpForce = 5;
     private float velocity;
-    float gravity = -9.81f;
+    private float gravity = -9.81f;
     private int jump = 0;
-    private bool isGrounded;
+    private float jumpHeight = 4;
+    private float gravityScale = 1;
 
-
-    private void Start() {
+    private void Start() 
+    {
         controller = GetComponent<CharacterController>();
 
     }
 
  
-     
-    
-
     void Update() {
+
         
-        velocity += gravity * Time.deltaTime;
-        GroundCheck();
-        DisableGravity();
-
-
-
         if (Input.GetKeyDown(KeyCode.Space) && jump != 1)
         {
-            velocity = jumpForce;
-            jump++;
-
+            JumpController();            
         }
-
-
-
+        velocity += gravity * gravityScale * Time.deltaTime;
         controller.Move(new Vector3(0, velocity, 0) * Time.deltaTime);
-
-  
+        
 
 
     }
 
 
+    private void OnControllerColliderHit(ControllerColliderHit hit) {
+        if (hit.collider.tag == "Ground")
+        {
+            jump = 0;
+        }
+        
+    }
 
+
+    void JumpController() {
+         
+        velocity = Mathf.Sqrt(jumpHeight * -2f * (gravity * gravityScale));
+        jump++;
+    }
   
 
-    void GroundCheck() 
+
+
+    // version if there is not characterController attached.
+   /* void GroundCheck() 
     {
         if (Physics.Raycast(transform.position, Vector3.down, 0.5f))
         {
@@ -72,5 +76,5 @@ public class PlayerPhysics : MonoBehaviour {
             jump = 0;
         }
     }
-
+     */
 }
