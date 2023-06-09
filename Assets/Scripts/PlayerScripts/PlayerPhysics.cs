@@ -7,11 +7,11 @@ public class PlayerPhysics : MonoBehaviour {
 
     CharacterController controller;
 
-    private float jumpForce = 5;
+    //private float jumpForce = 5;
     private float velocity;
     private float gravity = -9.81f;
     private int jump = 0;
-    private float jumpHeight = 4;
+    private float jumpHeight = 1;
     private float gravityScale = 1;
 
     private void Start() 
