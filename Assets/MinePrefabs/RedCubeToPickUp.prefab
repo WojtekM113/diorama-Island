@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 125593397316465355}
   - component: {fileID: 1795798223780844767}
   m_Layer: 0
-  m_Name: CubeToPickUp
+  m_Name: RedCubeToPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

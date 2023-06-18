@@ -35,7 +35,7 @@ public class PickUpTheCube : MonoBehaviour {
             {
                 PickUpCube();
             }
-             else 
+            else 
             {
                 DropCube();
             }
