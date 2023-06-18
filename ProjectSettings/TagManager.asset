@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - BlueButton
+  - RedButton
+  - YellowButton
   layers:
   - Default
   - TransparentFX
