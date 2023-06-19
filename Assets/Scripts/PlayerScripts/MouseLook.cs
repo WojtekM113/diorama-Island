@@ -29,7 +29,7 @@ public class MouseLook : MonoBehaviour {
         playerTransform.Rotate(Vector3.up * mouseX);
 
 
-        //rotating only child by using localRotation?
+        //rotating only child by using localRotation
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -40f, 40f);
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
