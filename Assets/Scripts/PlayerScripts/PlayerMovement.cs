@@ -15,11 +15,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal") *Time.deltaTime;
-        float verticalInput = Input.GetAxis("Vertical")*Time.deltaTime;
+        float horizontalInput = Input.GetAxis("Horizontal") *Time.fixedDeltaTime;
+        float verticalInput = Input.GetAxis("Vertical")*Time.fixedDeltaTime;
 
         Vector3 move = transform.right * horizontalInput  + transform.forward * verticalInput;
 
-        characterController.Move(move * speed * Time.deltaTime * 60);
+        characterController.Move(move * speed * Time.fixedDeltaTime * 60);
     }
 }
