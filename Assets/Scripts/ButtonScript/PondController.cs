@@ -64,8 +64,8 @@ public class PondController : MonoBehaviour
 
     IEnumerator SetActiveToFalse(GameObject objectToDestroy)
     {
-        yield return new WaitForSeconds(3f);
         pondParticles.Play();
+        yield return new WaitForSeconds(3f);
         objectToDestroy.SetActive(false);
         yield return new WaitForSeconds(3f);
         pondParticles.Stop();
