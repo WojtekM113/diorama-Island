@@ -16,8 +16,13 @@ public class PondController : MonoBehaviour
     [SerializeField] private GameObject redObjectToDestroy;
     [SerializeField] private GameObject blueObjectToDestroy;
     [SerializeField] private GameObject yellowObjectToDestroy;
+    private GameObject objectToDestory;
+    
     [SerializeField] private ParticleSystem pondParticles;
-     private GameObject objectToDestory;
+    
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+    
 
     private void Update()
     {
@@ -44,18 +49,21 @@ public class PondController : MonoBehaviour
             case "RedButton":
                 red = true;
                 StartCoroutine(SetActiveToFalse(redObjectToDestroy));
+               
                 Debug.Log("Red!");
                 break;
 
             case "BlueButton":
                 blue = true;
                 StartCoroutine(SetActiveToFalse(blueObjectToDestroy));
+         
                 Debug.Log("Blue!");
                 break;
 
             case "YellowButton":
                 yellow = true;
                 StartCoroutine(SetActiveToFalse(yellowObjectToDestroy));
+  
                 Debug.Log("Yellow");
                 break;
         }
@@ -64,8 +72,9 @@ public class PondController : MonoBehaviour
 
     IEnumerator SetActiveToFalse(GameObject objectToDestroy)
     {
-        
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
+        audioSource.PlayOneShot(audioClip, 0.7f);
+        yield return new WaitForSeconds(2f);
         pondParticles.Play();
         yield return new WaitForSeconds(3f);
         objectToDestroy.SetActive(false);

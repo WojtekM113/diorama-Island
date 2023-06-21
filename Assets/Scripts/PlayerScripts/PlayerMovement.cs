@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController characterController;
-     private float speed = 13f;
+     private float speed = 175f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * horizontalInput  + transform.forward * verticalInput;
 
-        characterController.Move(move * speed * Time.fixedDeltaTime * 60);
+        characterController.Move(move * (speed * Time.fixedDeltaTime));
     }
 }
