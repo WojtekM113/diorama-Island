@@ -16,6 +16,7 @@ public class PondController : MonoBehaviour
     [SerializeField] private GameObject redObjectToDestroy;
     [SerializeField] private GameObject blueObjectToDestroy;
     [SerializeField] private GameObject yellowObjectToDestroy;
+    [SerializeField] private ParticleSystem pondParticles;
      private GameObject objectToDestory;
 
     private void Update()
@@ -26,6 +27,10 @@ public class PondController : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        pondParticles.Stop();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -60,7 +65,10 @@ public class PondController : MonoBehaviour
     IEnumerator SetActiveToFalse(GameObject objectToDestroy)
     {
         yield return new WaitForSeconds(3f);
+        pondParticles.Play();
         objectToDestroy.SetActive(false);
+        yield return new WaitForSeconds(3f);
+        pondParticles.Stop();
     }
 
 }

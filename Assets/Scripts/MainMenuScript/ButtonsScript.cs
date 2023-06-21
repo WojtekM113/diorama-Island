@@ -16,20 +16,12 @@ public class ButtonsScript : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-   public void OnSettingsClick()
-   {
-       SceneManager.LoadScene("Settings");
-   }
 
    public void onExitClick()
     {
         Application.Quit();
     }
 
-   public void onGoBackButtonClick()
-   {
-       SceneManager.LoadScene("MainMenu");
-   }
 
   
 
