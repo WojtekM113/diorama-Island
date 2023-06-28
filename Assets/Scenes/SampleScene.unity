@@ -11617,7 +11617,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e24d8308136d5454aa9c3ec43ad9b76c,
         type: 3}
       propertyPath: m_Name
-      value: domek
+      value: house
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: e24d8308136d5454aa9c3ec43ad9b76c,
         type: 3}
