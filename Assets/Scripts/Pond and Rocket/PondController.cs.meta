@@ -3,7 +3,14 @@ guid: e7f22bcaddab1dd439cf1410f0d7d799
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - redObjectToDestroy: {instanceID: 0}
+  - blueObjectToDestroy: {instanceID: 0}
+  - yellowObjectToDestroy: {instanceID: 0}
+  - pondParticles: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - audioClip: {instanceID: 0}
+  - checkpoint_01: {fileID: 11400000, guid: 89492ffccbd2cf940b7b97ee01802ea1, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

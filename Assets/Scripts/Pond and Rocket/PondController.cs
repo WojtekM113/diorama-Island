@@ -26,7 +26,9 @@ public class PondController : MonoBehaviour
     public  static event ObjectsTrueAction OnAllTrue;
 
 
-    public NumberOfCubesScriptableObject numberOfCubes;
+ 
+    public DoubleBooleanForRocket checkpoint_01;
+    
 
 
     private void Awake()
@@ -39,7 +41,7 @@ public class PondController : MonoBehaviour
         if (red && blue && yellow)
         {
             StartCoroutine(WaitBeforeEvent());
-           
+            checkpoint_01.cubesTrue = true;
 
         }
 
@@ -66,20 +68,20 @@ public class PondController : MonoBehaviour
             case "RedButton":
                 red = true;
                 StartCoroutine(SetActiveToFalse(redObjectToDestroy));
-                numberOfCubes.Red = "v";
+                 
                 break;
 
             case "BlueButton":
                 blue = true;
                 StartCoroutine(SetActiveToFalse(blueObjectToDestroy));
-                numberOfCubes.Blue = "v";
+               
                 break;
             
 
             case "YellowButton":
                 yellow = true;
                 StartCoroutine(SetActiveToFalse(yellowObjectToDestroy));
-                numberOfCubes.Yellow = "v";
+                 
                 break;
         }
 

@@ -6,13 +6,9 @@ using UnityEngine;
 
 public class RocketController : MonoBehaviour
 {
-     
-  
-    
+    public DoubleBooleanForRocket checkIfAllTrue;
     [SerializeField] private GameObject emptyRocketObj;
-    [SerializeField] private NumberScriptableObject number;
     
- 
 
     private void OnEnable()
     {
@@ -27,10 +23,8 @@ public class RocketController : MonoBehaviour
 
     private void PlayRocketAnimationObj()
     {
-        //if(statement 1 && statement2){}
-            
-       
-        StartCoroutine(CountTOTheStart());
+        if(checkIfAllTrue.cubesTrue && checkIfAllTrue.blueButtonPressed)
+            StartCoroutine(CountTOTheStart());
 
     }
 
