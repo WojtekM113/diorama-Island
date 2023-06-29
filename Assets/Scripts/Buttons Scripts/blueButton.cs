@@ -14,7 +14,9 @@ public class blueButton : MonoBehaviour
     private int keyPressed;
 
     private void Start()
+
     {
+        checkpoint_02.blueButtonPressed = false;
         keyPressed = 0;
     }
 
@@ -28,7 +30,7 @@ public class blueButton : MonoBehaviour
         if (Input.GetKey(KeyCode.E) && isTrigger && keyPressed <= 0)
         {
             keyPressed++;
-            transform.DOMoveY(9.53f, 1).SetLoops(2, LoopType.Yoyo);
+            transform.DOMoveY(10.323f, 1).SetLoops(2, LoopType.Yoyo);
             checkpoint_02.blueButtonPressed = true;
             
              

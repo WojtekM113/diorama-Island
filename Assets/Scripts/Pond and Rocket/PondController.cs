@@ -31,10 +31,7 @@ public class PondController : MonoBehaviour
     
 
 
-    private void Awake()
-    {
-        
-    }
+   
 
     private void Update()
     {
@@ -52,6 +49,7 @@ public class PondController : MonoBehaviour
 
     private void Start()
     {
+        checkpoint_01.cubesTrue = false;
         pondParticles.Stop();
         
     }

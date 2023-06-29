@@ -379,7 +379,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start new game
+  m_text: ' Start new game
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -388,8 +390,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -609,14 +611,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Find cubes and put them into pond near house.
-
-
-    Use "E" To pick Up
-    and Drop cubes.
-
-
-    Use "Esc" To open main menu.'
+  m_text: "Find cubes and put them into pond near house.                       \n\nUse
+    \"E\" To pick Up and Drop cubes.\n\nUse \"E\" To press buttons.\n\nWait for doors
+    to open and press the buton\n\nPress the yellow buton after you pressed blue
+    before, if you try to press yellow button first nothing will happen\n\n(nie schowa\u0142em
+    kostek na potrzeby sprawdzenia pracy \u017Ceby kto\u015B nie musia\u0142 biega\u0107\nale
+    mo\u017Cna obejrze\u0107 ca\u0142\u0105 mapke i  tak )"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -348.18256, w: -274.4333}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
